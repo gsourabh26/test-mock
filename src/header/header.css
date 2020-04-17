@@ -1,0 +1,153 @@
+.header-container {
+	margin-top: 80px;
+	padding: 20px;
+}
+
+.header-bradcrum {
+	font-size: 14px
+}
+
+.header-bradcrum ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.header-bradcrum ul li:last-child{
+	font-weight: 700;
+}
+
+.header-bradcrum ul li:not(:last-child){
+	margin-right: 10px;
+}
+
+.header-bradcrum ul li:not(:last-child)::after {
+	content: "/";
+	margin-left: 10px;
+}
+
+.header-page-heading {
+	margin-top: 5px;
+	display: flex;
+    position: relative;
+}
+
+.header-page-heading span{
+	margin-left: 5px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.headers-filters-container {
+	margin-top: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.headers-filters-container .filters-heading {
+	text-transform: uppercase;
+	width: 260px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.filters-values{
+	display: flex;
+	margin-left: 10px;
+    padding-right: 240px;
+}
+
+.filters-values .filter-item {
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+    margin-right: 30px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.filters-values .more-links {
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.filter-item::after {
+	content: "";
+    height: 5px;
+    width: 5px;
+    right: -14px;
+    top: 5px;
+    position: absolute;
+    border-right: 1px solid rgba(0,0,0,0.4);
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+
+
+.sorting-container{
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 3px;
+	margin-left: auto;
+    position: absolute;
+    right: 0px;
+    top: -12px;
+}
+
+.sorting-select {
+    height: 40px;
+    font-size: 14px;
+    background: none;
+    width: 220px;
+    padding: 0 10px;
+	font-size: 14px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	text-transform: capitalize;
+	position: relative;
+	color: rgba(0,0,0,0.8);
+}
+
+.sorting-select::before{
+	content: "sort by :";
+    margin-right: 5px;
+    font-weight: 400;
+}
+
+.sorting-select::after{
+	content: "";
+    height: 10px;
+    width: 10px;
+    right: 12px;
+    top: 10px;
+    position: absolute;
+    border-right: 1px solid rgba(0,0,0,0.4);
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.sorting-options {
+	transition: all 0.1s;
+	display: none;
+    transform: scaleX(0);
+    position: relative;
+    background: white;
+}
+
+.sorting-container:hover > .sorting-options {
+    display: block;
+    transform: scaleX(1);
+}
+
+.sort-option {
+    padding: 8px 20px;
+    text-transform: capitalize;
+    color: rgba(0,0,0,0.7);
+    font-size: 14px;
+}
+
+.sort-option:hover {
+    background-color: rgba(0,0,0,0.1);
+}

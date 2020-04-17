@@ -1,0 +1,99 @@
+.toolbar-container{
+	display: flex;
+	height: 80px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	align-items: center;
+	padding: 0 20px;
+	box-shadow: 1px 0 5px 0 rgba(0,0,0,0.2);
+	background-color: white;
+	z-index: 10;
+}
+
+.toolbar-container .logo-container {
+	background-image: url('/sprite.png');
+    width: 53px;
+    height: 36px;
+    background-position: -462px 0;
+    background-size: 1404px 105px;
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.navigation-container ul.navigation-list {
+    display: flex;
+    list-style: none;
+}
+
+.navigation-container li.navigation-list-item {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.navigation-container li.navigation-list-item:not(:last-child) {
+    margin-right: 20px;
+    
+}
+
+.searchbar-container {
+	position: relative;
+	margin-left: auto;
+}
+
+.searchbar-container .searchbar-icon{
+	width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+	transform: translateY(-50%);
+	background-image: url('/sprite.png');
+    background-position: -754px 0;
+    background-size: 1404px 105px;
+}
+.searchbar-container input.searchbar {
+	font-size: 14px;
+	width: 300px;
+    height: 42px;
+    margin-right: 30px;
+    padding-left: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.nav-action-container {
+	display: flex;
+}
+
+.nav-action-container .nav-action {
+	font-size: 12px;
+	margin: 0px 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+}
+
+.nav-action-container .nav-action .icon {
+	width: 24px;
+	height: 24px;
+	background-image: url('/sprite.png');
+	background-size: 1404px 105px;
+	margin-bottom: 2px;
+}
+
+.nav-action-container .nav-action.profile .icon{
+	background-position: -298px -56px;
+}
+
+.nav-action-container .nav-action.wishlist .icon{
+	background-position: -320px -56px;
+}
+
+.nav-action-container .nav-action.bag .icon{
+	background-position: -341px -56px;
+}
